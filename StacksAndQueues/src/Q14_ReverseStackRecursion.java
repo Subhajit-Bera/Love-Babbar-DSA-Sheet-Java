@@ -6,16 +6,16 @@ public class Q14_ReverseStackRecursion {
 
     //Brute Force Using an extra stack
     //TC: 0(n)  SC: O(n)
-    static ArrayList<Integer> reverse(Stack<Integer> s){
-        Stack<Integer> st=new Stack<>();
-
-        while(!s.isEmpty()){
-            st.push(s.pop());
-        }
-
-        ArrayList<Integer> ans=new ArrayList<>(st);
-        return ans;
-    }
+//    static ArrayList<Integer> reverse(Stack<Integer> s){
+//        Stack<Integer> st=new Stack<>();
+//
+//        while(!s.isEmpty()){
+//            st.push(s.pop());
+//        }
+//
+//        ArrayList<Integer> ans=new ArrayList<>(st);
+//        return ans;
+//    }
 
     //Optimal Approach using Recursion:
 
@@ -40,12 +40,12 @@ public class Q14_ReverseStackRecursion {
             insertAtBelow(s,element);
         }
     }
-    public static ArrayList<Integer> reverse(Stack<Integer> s){
-        reverseRecursion(s);
-        ArrayList<Integer> ans=new ArrayList<>(s);
-        return ans;
-
-    }
+//    public static ArrayList<Integer> reverse(Stack<Integer> s){
+//        reverseRecursion(s);
+//        ArrayList<Integer> ans=new ArrayList<>(s);
+//        return ans;
+//
+//    }
 
 
 
@@ -64,7 +64,6 @@ public class Q14_ReverseStackRecursion {
 
     static ArrayList<Integer> reverse(Stack<Integer> s)
     {
-        // add your code here
         ArrayList<Integer> ans=new ArrayList<>();
         return reverseRec(s,ans);
 
